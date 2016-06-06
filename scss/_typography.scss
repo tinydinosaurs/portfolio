@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic|Source+Code+Pro:400,500,300,600,700,200,900);
+
+/* site typefaces */
+$main-font: 'Source Code Pro', helvetica, sans-serif;
+$secondary-font:'Libre Baskerville', Georgia, serif;
+
+
+/* site colors */
+$pink: #ff78ff;
+$orange: #ffa300;
+$yellow: #ffff50;
+$green: #27ff27;
+$blue: #7df9ff;
+$dark_grey: #333;
+
+
+
+body {
+	font-family: $main-font;
+	color: $dark_grey;
+}
+
+h1, h2, h3 {
+	font-family: $secondary-font;
+}
+
+h1 {font-size: 3.5em;}
+
+.examples li {
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+header h1 {margin-bottom: 70px;}

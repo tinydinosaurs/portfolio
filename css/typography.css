@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic|Source+Code+Pro:400,500,300,600,700,200,900);
+/* site typefaces */
+/* site colors */
+body {
+  font-family: "Source Code Pro", helvetica, sans-serif;
+  color: #333; }
+
+h1, h2, h3 {
+  font-family: "Libre Baskerville", Georgia, serif; }
+
+h1 {
+  font-size: 3.5em; }
+
+.examples li {
+  font-weight: 400;
+  text-transform: uppercase; }
+
+/*# sourceMappingURL=typography.css.map */
