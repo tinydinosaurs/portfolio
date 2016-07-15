@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic|Source+Code+Pro|Inconsolata|Lato|Lora|Palanquin+Dark|Quattrocento+Sans|Source+Code+Pro|Yantramanav);
+
 /* site colors */
 $pink: #ff78ff;
 $orange: #ffa300;
@@ -5,3 +7,12 @@ $yellow: #ffff50;
 $green: #27ff27;
 $blue: #7df9ff;
 $dark_grey: #333;
+
+/* fonts */
+$monospace: 'Source Code Pro', helvetica, sans-serif;
+$serif: 'Lora', 'Libre Baskerville', Georgia, serif;
+$sans: 'Lato', helvetica, sans-serif;
+$monospace-alt: 'Inconsolata';
+
+/* measurements */
+$base_font_size: 16px;

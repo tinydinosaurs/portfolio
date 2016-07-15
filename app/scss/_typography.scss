@@ -1,34 +1,47 @@
-@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic|Source+Code+Pro:400,500,300,600,700,200,900);
-
-/* site typefaces */
-$main-font: 'Source Code Pro', helvetica, sans-serif;
-$secondary-font:'Libre Baskerville', Georgia, serif;
-
-
-/* site colors */
-$pink: #ff78ff;
-$orange: #ffa300;
-$yellow: #ffff50;
-$green: #27ff27;
-$blue: #7df9ff;
-$dark_grey: #333;
-
-
-
 body {
-	font-family: $main-font;
+	font-family: $monospace;
+	font-size: $base_font_size;
 	color: $dark_grey;
+	line-height: 1.6;
 }
 
-h1, h2, h3 {
-	font-family: $secondary-font;
+h1 {
+	font-family: $serif;
+	font-size: 3.5rem;
 }
 
-h1 {font-size: 3.5em;}
+h2 {
+	@extend h1;
+	font-size: 2.8rem;
+	margin-bottom: 1.2rem;
+}
+
+p {
+	font-family: $monospace-alt;
+	font-size: 1.16rem;
+}
+
+p + p {
+	margin-top: 1.5em;
+}
 
 .examples li {
 	font-weight: 400;
 	text-transform: uppercase;
 }
 
-header h1 {margin-bottom: 70px;}
+.examples a {
+	color: inherit;
+	text-decoration: none;
+	transition: color 250ms;
+
+  &:hover
+  {
+    color: $blue;
+  }
+}
+
+.mono {
+	font-family: $monospace;
+	font-size: 0.9rem;
+}
