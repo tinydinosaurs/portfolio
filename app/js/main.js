@@ -1,7 +1,7 @@
+import $ from 'jquery';
 import portfolio from './portfolio';
 
-console.log('goodbye blue monday');
+$(document).ready(function(){
 
-let blarg = 20;
 
-console.log(`I have ${blarg} dollars`);
+});
