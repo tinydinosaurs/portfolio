@@ -11,8 +11,8 @@
     "watch:html": "onchange 'index.html' -- npm run build:html",
     "watch:css": "onchange 'app/scss/*.scss' -- npm run build:css",
     "watch:js": "onchange 'app/js/*.js' -- npm run build:js",
-    "serve": "browser-sync start --server --files 'dist/css/*.css, dist/js/*.js, dist/*.html'",
-    "watch": "npm-run-all -p serve watch:css watch:js watch:html",
+    "serve": "echo '=> server running' && browser-sync start --server --files 'dist/css/*.css, dist/js/*.js, dist/*.html'",
+    "watch": "echo '=> watching html & css' && npm-run-all -p serve watch:css watch:js watch:html",
     "all": "npm run build && npm run watch"
   },
   "author": "me!",
