@@ -3,30 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<title>a blank canvas</title>
-	<script src="https://use.fontawesome.com/15717c263b.js"></script>
+	<!-- <script src="https://use.fontawesome.com/15717c263b.js"></script> -->
+	<link rel="stylesheet" href="dist/css/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/main.css">
 </head>
 
 <body>
 
+	<!-- ************************
+				    HOME PAGE
+	************************* -->
 	<div class="home">
 		<section class="portfolio">
 			<h1>Look here.</h1>
 
 			<ul class="examples">
-				<li class="example first"><a href="#">Exquisite Corpse &ndash; May 2016</a></li>
-				<li class="example second"><a href="#">Texas Education Agency &ndash; 2009-2016</a></li>
-				<li class="example third"><a href="#">Franklin Barbecue &ndash; 2009</a></li>
-				<li class="example fourth"><a href="#">Mariposa Montessory &ndash; 2012</a></li>
-				<li class="example fifth"><a href="#">Austin Digital Printing &ndash; 2011</a></li>
+				<li class="example first"><a href="ExCorpse">Exquisite Corpse &ndash; May 2016</a></li>
+				<li class="example second"><a href="TxEdAgency">Texas Education Agency &ndash; 2009-2016</a></li>
+				<li class="example third"><a href="Franklin">Franklin Barbecue &ndash; 2009</a></li>
+				<li class="example fourth"><a href="Mariposa">Mariposa Montessory &ndash; 2012</a></li>
+				<li class="example fifth"><a href="AusDigitalPrint">Austin Digital Printing &ndash; 2011</a></li>
 				<!-- <li class="example sixth"><a href="#">Doodles &ndash; ongoing</a></li> -->
 			</ul>
 			<p class="mono">I'm Dana. This is some of what I've done. Because I want to fit in with the human race, I have social media. Use them if you must. &copy; 2016 <a href="#">t</a> <a href="#">gh</a> <a href="#">li</a></p>
 		</section>
-
 	</div>
 
-	<section class="details first">
+  <!-- ************************
+	       DETAILS PAGES
+  ************************* -->
+
+	<!-- begin Equisite Corpse -->
+	<section class="details first" id="ExCorpse">
 		<aside>
 			<h2>Exquisite Corpse</h2>
 			<p>Exquisite Corpse is a single page application that I built as my final project for The Iron Yard, an intensive, full-time, 3-month coding bootcamp.</p>
@@ -45,9 +53,58 @@
 			<img class="img little-img sketch" src="app/assets/exquisite_corpse_sketchbook.png" />
 			<img class="img little-img mobile" src="app/assets/exquisite_corpse_mobile.png" />
 		</article>
-		<div class="exit"><a href="#"><i class="fa fa-times" aria-hidden="true"></i>
+		<div class="exit"><a href="#"><i class="pe-7s-close"></i>
 </a></div>
-	</section>
+	</section> <!-- end Exquisite Corpse -->
+
+	<!-- begin Texas Education Agency -->
+	<section class="details first" id="TxEdAgency">
+		<aside>
+			<h2>Texas Education Agency</h2>
+			<p>Rebuilding the Texas Education website's content architecture is among my proudest achievements.  The project was part of a ground-up web redesign.</p>
+			<p>Users reported that they found our website difficult to navigate. Poor organization, outdated content, and duplicate pages were common concerns.</p>
+			<p>To tackle the problem, I evaluated the websites 5,000 pages, sorting them into categories. Then, following usability best practices, I sketched out a content tree.</p>
+			<p>Next, I worked with content writers to delete old and duplicate pages. The result is website navigation that, in most cases, goes no more than four levels deep.</p>
+			<p>Once all the site's pages had a home, I spearheaded a project to rewrite content in plain language. I also helped create a simplified process for getting content published on the site.</p>
+
+				<a href="#">see it live</a>
+				<br />
+				<a href="#">look under the hood</a>
+			<!-- <p>.</p> -->
+		</aside>
+		<article>
+			<img class="img big-img" src="#" />
+			<!-- <img class="img little-img" src="app/assets/exquisite_corpse.png"/> -->
+			<img class="img little-img sketch" src="#" />
+			<img class="img little-img mobile" src="#" />
+		</article>
+		<div class="exit"><a href="#"><i class="pe-7s-close"></i>
+</a></div>
+	</section> <!-- end Texas Education Agency -->
+
+	<!-- begin Franklin Barbecue -->
+	<section class="details first" id="Franklin">
+		<aside>
+			<h2>Franklin Barbecue</h2>
+			<p>Back when Aaron and Stacey were running their barbecue joint out of an Airstream trailer in Austin, they needed someone to help them create a web presence.</p>
+			<p>I designed and built their first website using a retro look that communicated Franklin's aesthetic as well as the spirit of both Austin and Texas barbecue culture.</p>
+			<p>They've since moved to a brick and mortar building and hired a web studio to rebuild and maintain their site, but if you visit, you'll see they kept many elements of my original design.</p>
+			<p>
+				<a href="#">see it live</a>
+				<br />
+				<a href="#">look under the hood</a>
+			</p>
+			<!-- <p>.</p> -->
+		</aside>
+		<article>
+			<img class="img big-img" src="#" />
+			<!-- <img class="img little-img" src="app/assets/exquisite_corpse.png"/> -->
+			<img class="img little-img sketch" src="#" />
+			<img class="img little-img mobile" src="#" />
+		</article>
+		<div class="exit"><a href="#"><i class="pe-7s-close"></i>
+</a></div>
+	</section> <!-- end Franklin Barbecue -->
 
 	<script src="dist/js/bundle.js" charset="utf-8"></script>
 </body>

@@ -11,7 +11,13 @@ var _portfolio2 = _interopRequireDefault(_portfolio);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _jquery2.default)(document).ready(function () {});
+(0, _jquery2.default)(document).ready(function () {
+  (0, _jquery2.default)('.exit').on('click', function (e) {
+    console.log('clicked!');
+    (0, _jquery2.default)('.home').toggleClass('hidden');
+    // $(this).toggleClass('hidden');
+  });
+});
 
 },{"./portfolio":2,"jquery":3}],2:[function(require,module,exports){
 'use strict';
