@@ -42,3 +42,12 @@
 	padding-bottom: 10px;
 	border-bottom: 1px solid grey;
 }
+
+// .examples a:hover {color: #ccc;}
+
+@each $current-color in $colors-list {
+  $i: index($colors-list, $current-color);
+  .item-#{$i}:hover {
+    color: $current-color;
+  }
+}
