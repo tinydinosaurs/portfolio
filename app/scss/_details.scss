@@ -1,6 +1,10 @@
-.inside {
-  background-color: pink;
-  padding: 5rem;
+// $colors-list: $blue $green $yellow $orange  $pink;
+
+@each $current-color in $colors-list {
+  $i: index($colors-list, $current-color);
+  .inside-#{$i} {
+    background-color: $current-color;
+  }
 }
 
 .overlay {
@@ -9,6 +13,8 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
+  padding: 5rem;
+  // background-color: white;
   z-index: 2;
 	opacity: 0;
 	overflow: scroll;
@@ -30,4 +36,3 @@ a.hide-btn{
   font-size: 2rem;
   text-decoration: none;
 }
-// blah

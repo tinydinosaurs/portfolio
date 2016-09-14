@@ -42,3 +42,14 @@
 	padding-bottom: 10px;
 	border-bottom: 1px solid grey;
 }
+
+// .examples a:hover {color: #ccc;}
+
+// a fun loop to create different hover colors for each item in a list.
+// Need to DRY things - combine this loop with another one that does something very similar.
+@each $current-color in $colors-list {
+  $i: index($colors-list, $current-color);
+  .item-#{$i}:hover {
+    color: $current-color;
+  }
+}
