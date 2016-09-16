@@ -1,10 +1,24 @@
-/* rainbow border around whole viewport. */
 .home {
+  margin: 50px 75px;
+	position: relative;
+}
+
+.content {
+	position: absolute;
+	overflow: scroll;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: calc(100vh - 100px);
+}
+/* rainbow border around whole viewport. */
+.frame {
 	/* frame's origin is top left of screen */
 	top: 0;
 	left: 0;
 	/* frame doesn't move. This is so I can set it's width and height to 100% and keep it from doing wacky things on scroll. */
 	position: fixed;
+	z-index: -1;
 	height: 100%;
 	width: 100%;
 	padding: 4rem 6rem;
