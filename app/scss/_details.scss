@@ -13,7 +13,7 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
-  padding: 5rem;
+  padding: 3rem 5%;
   // background-color: white;
   z-index: 2;
 	opacity: 0;
@@ -39,22 +39,20 @@ a.hide-btn{
 
 .overlay aside {
   margin-top: 2.5rem;
+  text-align: center;
   img {
     max-width: 100%;
   }
 }
 
-@media screen and (min-width: 1060px) {
-  .overlay article, .overlay aside {
-    width: calc(50% - 24px);
-    float: left;
-  }
-  .overlay aside {
-    margin-top: 0;
-    margin-left: 24px;
-    img {
+@media screen and (min-width: 884px) {
 
-      max-width: 100%;
-    }
+  .overlay article {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 3em;
+    -webkit-column-gap: 3em;
+    column-gap: 3em;
   }
 }
