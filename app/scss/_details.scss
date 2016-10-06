@@ -36,3 +36,25 @@ a.hide-btn{
   font-size: 2rem;
   text-decoration: none;
 }
+
+.overlay aside {
+  margin-top: 2.5rem;
+  img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1060px) {
+  .overlay article, .overlay aside {
+    width: calc(50% - 24px);
+    float: left;
+  }
+  .overlay aside {
+    margin-top: 0;
+    margin-left: 24px;
+    img {
+
+      max-width: 100%;
+    }
+  }
+}
