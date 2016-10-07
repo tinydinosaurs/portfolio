@@ -29,6 +29,18 @@
   transition: opacity .5s ease-in-out;
 }
 
+.project-link a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  margin-right: 0.5rem;
+}
+
+// .project-link a:nth-child(2) {
+//   margin-top: 3rem;
+// }
+
 a.hide-btn{
   position: fixed;
   top: 1rem;
@@ -54,5 +66,12 @@ a.hide-btn{
     -moz-column-gap: 3em;
     -webkit-column-gap: 3em;
     column-gap: 3em;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .overlay {
+    padding-right: 10%;
+    padding-left: 10%;
   }
 }
