@@ -1,43 +1,45 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "you have discovered all my secrets",
-  "main": "main.js",
+  "description": "This is my portfolio. You can see it live at www.dlachman.org.",
+  "main": "index.js",
   "scripts": {
+    "autoprefixer": "postcss -u autoprefixer -r dist/css/*.css",
     "build:css": "echo '=> building css' && node-sass --output-style compressed app/scss -o dist/css",
     "build:js": "echo '=> building js' && browserify -t babelify --presets [ es2015 ] app/js/*.js -o dist/js/bundle.js",
     "build:html": "echo '=>build html' && cp index.html dist/",
-    "img": "imagemin-newer app/images dist/images",
-    "build": "npm run build:html -s && npm run build:css -s && npm run build:js -s && npm run img",
+    "build": "npm run build:html -s && npm run build:css -s && npm run build:js",
     "watch:html": "onchange 'index.html' -- npm run build:html",
     "watch:css": "onchange 'app/scss/*.scss' -- npm run build:css",
     "watch:js": "onchange 'app/js/*.js' -- npm run build:js",
-    "serve": "browser-sync start --server --files 'dist/css/*.css, dist/js/*.js, dist/*.html'",
+    "serve": "browser-sync start --server --files 'dist/css/*.css, dist/js/*.js, dist/index.html'",
     "watch": "npm-run-all -p serve watch:css watch:js watch:html",
     "start": "npm run build && npm run watch"
-  },
-  "author": "me!",
-  "license": "ISC",
-  "devDependencies": {
-    "babelify": "^7.3.0",
-    "browser-sync": "^2.13.0",
-    "browserify": "^13.0.1",
-    "imagemin": "^5.2.2",
-    "imagemin-cli": "^3.0.0",
-    "imagemin-newer": "^1.0.2",
-    "node-sass": "^3.8.0",
-    "npm-run-all": "^2.3.0",
-    "onchange": "^2.5.0"
-  },
-  "dependencies": {
-    "jquery": "^3.1.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tinydinosaurs/portfolio.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/tinydinosaurs/portfolio/issues"
   },
-  "homepage": "https://github.com/tinydinosaurs/portfolio#readme"
+  "homepage": "https://github.com/tinydinosaurs/portfolio#readme",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.17.6",
+    "browserify": "^13.1.1",
+    "imagemin": "^5.2.2",
+    "imagemin-cli": "^3.0.0",
+    "imagemin-newer": "^1.0.2",
+    "node-sass": "^3.13.0",
+    "npm-run-all": "^3.1.1",
+    "onchange": "^3.0.2",
+    "postcss-cli": "^2.6.0"
+  }
 }

@@ -1,7 +1,9 @@
-import $ from 'jquery';
-import portfolio from './portfolio';
+// import $ from 'jquery';
+// import portfolio from './portfolio';
+//
+// $(document).ready(function(){
+//
+//
+// });
 
-$(document).ready(function(){
-
-
-});
+console.log('goodbye blue monday');

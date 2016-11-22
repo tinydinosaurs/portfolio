@@ -1,6 +1,14 @@
+body {
+	font-family: $sans;
+	font-size: $base_font_size;
+	color: $dark_grey;
+	line-height: 1.6;
+}
 
+section {
+  padding: 0 3rem;
+}
 
-footer p {
-	font-size: 0.85em;
-	margin-bottom: 5px;
+img {
+  max-width: 100%;
 }

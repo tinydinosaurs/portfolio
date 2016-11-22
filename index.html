@@ -4,55 +4,113 @@
   <meta charset="UTF-8">
   <title>Dana Lachman (º_o)</title>
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="dist/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="dist/css/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
   <link rel="stylesheet" href="dist/css/main.css">
+  <script src="https://use.fontawesome.com/b2dd8f6754.js"></script>
+  <script src="dist/js/bundle.js"></script>
 </head>
   <body>
     <!-- ************************
-				    HOME PAGE
+				      HEADER
 	************************* -->
-    <section class="home">
-      <div class="content">
-        <h1>Look here</h1>
-        <ul class="examples">
-          <li class="example item-1"><a href="#Exquisite-Corpse">Exquisite Corpse &ndash; May 2016</a></li>
-          <li class="example item-2"><a href="#Texas-Education-Agency">Texas Education Agency &ndash; 2009-2016</a></li>
-      		<li class="example item-3"><a href="#Franklin-Barbecue">Franklin Barbecue &ndash; 2009</a></li>
-      		<li class="example item-4"><a href="#Mariposa-Montessori">Mariposa Montessory &ndash; 2012</a></li>
-      		<li class="example item-5"><a href="#Austin-Digital-Printing">Austin Digital Printing &ndash; 2011</a></li>
-      		<!-- <li class="example sixth"><a href="#">Doodles &ndash; ongoing</a></li> -->
-      	</ul>
-        <footer>
-          <p>Hi, I'm Dana. Learn more about me on <a href="http://www.linkedin.com/in/danalachman">LinkedIn</a>. See my code on <a href="https://github.com/tinydinosaurs">GitHub</a>. Because I want to fit in with the human race, I also throw words around on <a href="https://medium.com/@tinydinosaur">Medium</a> and characters around on <a href="https://twitter.com/_tinydinosaurs">Twitter</a>. </p>
-        </footer>
-      </div>
-    </section>
+      <header>
+        <h1>Dana Lachman</h1>
+        <nav class="social_media">
+          <a href="https://github.com/tinydinosaurs"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="http://www.linkedin.com/in/danalachman"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="http://codepen.io/tinydinosaurs/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/_tinydinosaurs"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </nav>
+      </header>
+
+      <!-- ************************
+  				  THUMBNAIL GRID
+  	************************* -->
+      <section class="thumbnails container">
+        <div class="row">
+          <div class="preview col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="thumbnail" data-toggle="modal" data-target=".bs-example-modal-lg">
+              <img src="dist/images/mariposa_sm_square.png" alt="Mariposa Montessori website screenshot">
+              <span class="thumbnail_text color-01">
+                <p>Mariposa Montessori<br>
+                <span class="date">2012</span></p>
+              </span>
+            </a>
+          </div>
+          <div class="preview col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="thumbnail">
+              <img src="dist/images/exquisite_home_square.png" alt="Exquisite Corpse website screenshot">
+              <span class="thumbnail_text color-02">
+                <p>Exquisite<br>Corpse<br>
+                <span class="date">2016</span></p>
+              </span>
+            </a>
+          </div>
+          <div class="preview col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="thumbnail">
+              <img src="dist/images/tea_sm_square.png" alt="Texas Education Agency website screenshot">
+              <span class="thumbnail_text color-03">
+                <p>Tx Education Agency<br>
+                <span class="date multi_year">2009-2016</span></p>
+              </span>
+            </a>
+          </div>
+
+          <div class="preview col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="thumbnail">
+              <img src="dist/images/franklin_sm_square.png" alt="Franklin Barbecue website screenshot">
+              <span class="thumbnail_text color-04">
+                <p>Franklin Barbecue<br>
+                <span class="date">2009</span></p>
+              </span>
+            </a>
+          </div>
+          <div class="preview col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="thumbnail">
+              <img src="dist/images/ADP_home_square.png" alt="Austin Digital Printing website screen shot">
+              <span class="thumbnail_text color-05">
+                <p>Austin Digital Printing<br>
+                <span class="date">2011</span></p>
+              </span>
+            </a>
+          </div>
+          <div class="preview col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="thumbnail">
+              <img src="dist/images/farm_to_work_square.png" alt="Print and digital design screen shot">
+              <span class="thumbnail_text color-06">
+                <p>Print &amp; Digital Design<br>
+                <span class="date multi_year">2009-2016</span></p>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
 
     <!-- ************************
 	       DETAILS PAGES
   ************************* -->
 
 	<!-- begin Exquisite Corpse -->
-    <section class="inside-1 overlay" id="Exquisite-Corpse">
+    <section class="inside-2 overlay" id="Exquisite-Corpse">
       <h2>Exquisite Corpse</h2>
       <article>
         <p>Exquisite Corpse is a single page application that I built as my final project for The Iron Yard, an intensive, full-time, 3-month coding bootcamp.</p>
         <p>The app is inspired by and borrows its name from a game played by Surrealists artists. Participants contribute, in turn, to a written work but are only shown the last few lines of text written by the previous collaborator. The name is derived from a line in one of the Surrealists' first such projects: Le cadavre exquis boira le vin nouveau ("The exquisite corpse shall drink the new wine").</p>
         <p>The app is built using React views, Backbone models and collections, node.js postgress, and express.</p>
         <p class="project-link">
-    		  <a href="https://jointhestory.herokuapp.com/">see it live</a>
-    			<a href="https://github.com/tinydinosaurs/exquisite-corpse">look under the hood</a>
+    		  <a class="btn btn-default" href="https://jointhestory.herokuapp.com/">see it live</a>
+    			<a class="btn btn-default" href="https://github.com/tinydinosaurs/exquisite-corpse">look under the hood</a>
     		</p>
         <a href="#home" class="hide-btn" title="home"><i class="pe-7s-close"></i></a>
       </article>
       <aside>
-        <img class="img big-img" src="app/images/exquisite_corpse_home.png" />
+        <img class="img big-img" src="dist/images/exquisite_home_large.png" />
     	</aside>
     </section><!-- end Exquisite Corpse -->
 
 	<!-- begin Texas Education Agency -->
-    <section class="inside-2 overlay" id="Texas-Education-Agency">
+    <section class="inside-3 overlay" id="Texas-Education-Agency">
       <h2>Texas Education Agency</h2>
       <article>
     		<p>Rebuilding the Texas Education website's content architecture is among my proudest achievements.  The project was part of a ground-up web redesign.</p>
@@ -66,12 +124,12 @@
         <a href="#home" class="hide-btn" title="home"><i class="pe-7s-close"></i></a>
       </article>
       <aside>
-        <img class="img big-img" src="app/images/texas_education_agency_home.png" />
+        <img class="img big-img" src="dist/images/tea_home_large.png" />
       </aside>
     </section><!-- end Texas Education Agency -->
 
 	<!-- begin Franklin Barbecue -->
-    <section class="inside-3 overlay" id="Franklin-Barbecue">
+    <section class="inside-4 overlay" id="Franklin-Barbecue">
       <h2>Franklin Barbecue</h2>
       <article>
     			<p>Back when Aaron and Stacey were running their barbecue joint out of an Airstream trailer in Austin, they needed someone to help them create a web presence.</p>
@@ -83,12 +141,12 @@
         <a href="#home" class="hide-btn" title="home"><i class="pe-7s-close"></i></a>
       </article>
       <aside>
-        <img class="img big-img" src="app/images/franklin_barbecue_menu.png" />
+        <img class="img big-img" src="dist/images/franklin_menu_large.png" />
       </aside>
     </section><!-- end Franklin Barbecue -->
 
 	<!-- begin Mariposa Montessori -->
-    <section class="inside-4 overlay" id="Mariposa-Montessori">
+    <section class="inside-1 overlay" id="Mariposa-Montessori">
       <h2>Mariposa Montessori</h2>
       <article>
     			<p>This is my most recent freelance design/development project, the 30th such project I've worked on over the past six years.</p>
@@ -100,7 +158,7 @@
         <a href="#home" class="hide-btn" title="home"><i class="pe-7s-close"></i></a>
       </article>
       <aside>
-        <img class="img big-img" src="app/images/mariposa_montessori_home.png" />
+        <img class="img big-img" src="dist/images/mariposa_home_large.png" />
       </aside>
     </section><!-- end Mariposa Montessori -->
 
@@ -118,9 +176,24 @@
         <a href="#home" class="hide-btn" title="home"><i class="pe-7s-close"></i></a>
       </article>
       <aside>
-        <img class="img big-img" src="app/images/austin_digital_printing_home.png" />
+        <img class="img big-img" src="dist/images/ADP_home_large.png" />
       </aside>
     </section><!-- end Austin Digital Printing -->
+    <!-- begin Austin Digital Printing -->
+      <section class="inside-5 overlay" id="print-digital-design">
+        <h2>Pring &amp; Digital Design</h2>
+        <article>
+          <p>Occasionally I design web ads, logos, and printed materials. I also make illustrations for my own entertainment. Here are some examples:</p>
+          <p class="project-link">
+            <a href="http://www.austindigital.biz/">see it live</a>
+          </p>
+          <a href="#home" class="hide-btn" title="home"><i class="pe-7s-close"></i></a>
+        </article>
+        <aside>
+          <img class="img big-img" src=".." />
+        </aside>
+      </section><!-- end  print & digital design -->
+
     <div class="frame"></div>
   </body>
 </html>

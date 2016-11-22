@@ -1,9 +1,0 @@
-{
-	"version": 3,
-	"file": "_bourbon.scss",
-	"sources": [
-		"_bourbon-deprecated-upcoming.scss"
-	],
-	"mappings": "",
-	"names": []
-}

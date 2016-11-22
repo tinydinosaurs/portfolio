@@ -1,42 +1,37 @@
-body {
-	font-family: $monospace;
-	font-size: $base_font_size;
-	color: $dark_grey;
-	line-height: 1.6;
-}
 
-h1 {
-	font-family: $serif;
-	font-size: 3.5rem;
-}
-
-h2 {
-	@extend h1;
-	font-size: 2.8rem;
-	margin-bottom: 1.2rem;
-}
-
-p {
-	font-family: $monospace-alt;
-	font-size: 1.16rem;
-}
-
-p + p {
-	margin-top: 1.25em;
-}
-
-.examples li {
-	font-weight: 400;
-	text-transform: uppercase;
-}
-
-.examples a {
-	color: inherit;
-	text-decoration: none;
-	transition: color 250ms;
-}
-
-.mono {
-	font-family: $monospace;
-	font-size: 0.9rem;
-}
+//
+// h1 {
+// 	font-family: $sans;
+// 	font-size: 3.5rem;
+// }
+//
+// h2 {
+// 	@extend h1;
+// 	font-size: 2.8rem;
+// 	margin-bottom: 1.2rem;
+// }
+//
+// p {
+// 	font-family: $sans;
+// 	font-size: 1.16rem;
+// }
+//
+// p + p {
+// 	margin-top: 1.25em;
+// }
+//
+// .examples li {
+// 	font-weight: 400;
+// 	text-transform: uppercase;
+// }
+//
+// .examples a {
+// 	color: inherit;
+// 	text-decoration: none;
+// 	transition: color 250ms;
+// }
+//
+// .mono {
+// 	font-family: $monospace;
+// 	font-size: 0.9rem;
+// }

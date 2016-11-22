@@ -1,20 +1,23 @@
-@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic|Source+Code+Pro|Inconsolata|Lato|Lora|Palanquin+Dark|Quattrocento+Sans|Source+Code+Pro|Yantramanav);
+// @import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic|Source+Code+Pro|Inconsolata|Lato|Lora|Palanquin+Dark|Quattrocento+Sans|Source+Code+Pro|Yantramanav);
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600');
 
 /* site colors */
-$pink: #ff78ff;
-$orange: #ffa300;
-$yellow: #ffff50;
-$green: #27ff27;
-$blue: #7df9ff;
-$dark_grey: #333;
+$red: #D64550;
+$orange: #EA9078;
+$yellow: #E8C060;
+$green: #65C3AD;
+$blue: #628395;
+$purple: #B47EB3;
+$dark_grey: #253031;
+$light_grey: #919098;
 
-$colors-list: $blue $green $yellow $orange  $pink;
+$colors-list: $purple $blue $green $yellow $orange  $red;
 
 /* fonts */
-$monospace: 'Source Code Pro', helvetica, sans-serif;
-$serif: 'Lora', 'Libre Baskerville', Georgia, serif;
-$sans: 'Lato', helvetica, sans-serif;
-$monospace-alt: 'Inconsolata';
+// $monospace: 'Source Code Pro', helvetica, sans-serif;
+// $serif: 'Lora', 'Libre Baskerville', Georgia, serif;
+$sans: 'Poppins', helvetica, sans-serif;
+// $monospace-alt: 'Inconsolata';
 
 /* measurements */
 $base_font_size: 16px;
