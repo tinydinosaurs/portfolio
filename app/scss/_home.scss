@@ -131,12 +131,15 @@ span.date.multi_year:after {
 }
 
 // thumbnail text overlay bg color styles
-$colors-list: $purple $blue $green $yellow $orange  $red;
+// $colors-list: $purple $blue $green $yellow $orange  $red;
 
 @each $current-color in $colors-list {
     $i: index($colors-list, $current-color);
     span.color-0#{$i} {
         background-color: $current-color;
+    }
+    article.color-0#{$i} {
+      background-color: $current-color;
     }
 }
 

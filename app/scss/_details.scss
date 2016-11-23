@@ -1,0 +1,87 @@
+// css overlay show hide styles
+.overlay {
+  position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+  // padding: 3rem 5%;
+  background-color: white;
+  height: 100%;
+  z-index: 100;
+	opacity: 0;
+	overflow: scroll;
+  transition: opacity .5s ease-in-out;
+  pointer-events: none;
+}
+
+.overlay:target {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity .5s ease-in-out;
+}
+
+// styles for overlay content
+section.overlay {
+  text-align: center;
+  margin-bottom: 8rem;
+  h1 {
+    margin-bottom: 4rem;
+  }
+  p {
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  article {
+    height: 100vh;
+    padding: 6rem 12rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.project-links {
+  margin-top: 4rem;
+  a {
+    margin-left: 1rem;
+  }
+}
+
+article.color-01, article.color-02, article.color-05, article.color-06 {
+  color: white;
+  outline: 2px solid rgba(255,255,255,0.25);
+  outline-offset: -1.25rem;
+}
+
+article.color-03, article.color-04 {
+  outline: 2px solid rgba(37,48,49,0.25);
+  outline-offset: -1.25rem;
+}
+
+.overlay aside {
+  margin: 0 6rem;
+}
+
+a.hide-btn{
+  position: fixed;
+  top: 1rem;
+  right: 1.25rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+}
+
+.scroll {
+  text-align: center;
+  margin-top: 2rem;
+  i {
+    font-size: 4rem;
+    padding: 0;
+    opacity: 0.5;
+  }
+}
+//
+// @media screen and (max-width 1024px) {
+//
+// }
