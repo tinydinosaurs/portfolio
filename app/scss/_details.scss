@@ -27,22 +27,24 @@ section.overlay {
   text-align: center;
   margin-bottom: 8rem;
   h1 {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+    font-size: 2rem;
   }
   p {
     text-align: left;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 300;
   }
   article {
-    height: 100vh;
-    padding: 6rem 12rem;
-    margin-bottom: 4rem;
+    // height: 100%;
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
   }
 }
 
 .project-links {
-  margin-top: 4rem;
+  margin-top: 2rem;
   a {
     margin-left: 1rem;
   }
@@ -60,7 +62,7 @@ article.color-03, article.color-04 {
 }
 
 .overlay aside {
-  margin: 0 6rem;
+  margin: 0 1rem;
 }
 
 a.hide-btn{
@@ -81,7 +83,39 @@ a.hide-btn{
     opacity: 0.5;
   }
 }
-//
-// @media screen and (max-width 1024px) {
-//
-// }
+
+
+@media screen and (min-width: 768px) {
+  section.overlay {
+    h1 {
+      margin-bottom: 4rem;
+    }
+    p {
+      font-size: 1.25rem;
+    }
+    article {
+      height: 100vh;
+      padding: 6rem 4rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  .project-links {
+    margin-top: 4rem;
+  }
+
+  .overlay aside {
+    margin: 0 6rem;
+  }
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+  section.overlay {
+    article {
+      padding: 6rem 12rem;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 // header styles
 header {
   padding: 3rem;
+  padding-bottom: 1.5rem;
   text-align: center;
 }
 
@@ -47,7 +48,7 @@ header h1 {
 
 .thumbnail {
   border: none;
-  margin: 1.5rem;
+  margin: 1.5rem 3rem;
 }
 
 a.thumbnail {
@@ -67,13 +68,13 @@ a.thumbnail:hover {
 
 span.thumbnail_text {
   position: absolute;
-  left: 1.5rem;
-  top: 1.5rem;
+  left: 2.5rem;
+  top: 1rem;
   // background: rgba(98,131,149,0.75);
   // color: white;
   // display: table;
-  width: calc(100% - 3rem);
-  height: calc(100% - 3rem);
+  width: calc(100% - 5rem);
+  height: calc(100% - 2rem);
   line-height: 100%;
   text-align: center;
   outline: 1px solid rgba(255,255,255,0.8);
@@ -143,6 +144,36 @@ span.date.multi_year:after {
     }
 }
 
+@media screen and (min-width: 768px) {
+  header {
+    padding: 3rem;
+  }
+
+  .thumbnail {
+    margin: 1.5rem;
+  }
+
+  span.thumbnail_text {
+    left: 1.25rem;
+    top: 1.25rem;
+    width: calc(100% - 2.5rem);
+    height: calc(100% - 2.5rem);
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .thumbnail {
+    margin: 2rem;
+  }
+
+  span.thumbnail_text {
+    left: 1.5rem;
+    top: 1.5rem;
+    width: calc(100% - 3rem);
+    height: calc(100% - 3rem);
+  }
+}
 
 // @media all and (max-width: 991px) {
 //   a.thumbnail {
