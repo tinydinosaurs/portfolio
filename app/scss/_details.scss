@@ -62,11 +62,11 @@ article.color-03, article.color-04 {
 }
 
 .overlay aside {
-  margin: 0 1rem;
+  margin: 0 1rem 2rem 1rem;
 }
 
 a.hide-btn{
-  position: fixed;
+  position: absolute;
   top: 1rem;
   right: 1.25rem;
   font-size: 2rem;
@@ -97,6 +97,12 @@ a.hide-btn{
       height: 100vh;
       padding: 6rem 4rem;
       margin-bottom: 4rem;
+    }
+  }
+
+  section:last-of-type {
+    article {
+      height: auto;
     }
   }
 
