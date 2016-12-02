@@ -61,8 +61,19 @@ article.color-03, article.color-04 {
   outline-offset: -1.25rem;
 }
 
+.color-06 ul {
+  text-align: left;
+  list-style-type: circle;
+  margin: 1.5rem 4rem 0 4rem;
+  font-size: 1rem;
+}
+
+.color-06 ul li {
+  margin-bottom: 0.5rem;
+}
+
 .overlay aside {
-  margin: 0 1rem 2rem 1rem;
+  margin: 0 3rem 2rem 3rem;
 }
 
 a.hide-btn{
@@ -84,11 +95,20 @@ a.hide-btn{
   }
 }
 
+figure {
+  margin-bottom: 2.5rem;
+}
+
+figcaption {
+  font-size: 0.8rem;
+  color: $light_grey;
+  padding: 0 1rem;
+}
 
 @media screen and (min-width: 768px) {
   section.overlay {
     h1 {
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
     }
     p {
       font-size: 1.25rem;
@@ -107,21 +127,25 @@ a.hide-btn{
   }
 
   .project-links {
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
 
-  .overlay aside {
-    margin: 0 6rem;
+  .col-sm-8, .col-sm-4 {
+    padding: 0 2rem;
   }
 }
 
-
-
-
 @media screen and (min-width: 992px) {
   section.overlay {
-    article {
-      padding: 6rem 12rem;
+    h1 {
+      font-size: 2.5rem;
     }
+    article {
+      padding: 6rem 8rem;
+    }
+  }
+
+  .overlay aside {
+    margin: 0 4rem;
   }
 }
