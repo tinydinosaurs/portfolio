@@ -24,7 +24,7 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.pe-7s-album:before {
+/*.pe-7s-album:before {
 	content: "\e6aa";
 }
 .pe-7s-arc:before {
@@ -125,10 +125,11 @@
 }
 .pe-7s-cash:before {
 	content: "\e68c";
-}
+} */
 .pe-7s-close:before {
 	content: "\e680";
 }
+/*
 .pe-7s-bluetooth:before {
 	content: "\e68d";
 }
@@ -629,4 +630,4 @@
 }
 .pe-7s-airplay:before {
 	content: "\e67f";
-}
+}*/
