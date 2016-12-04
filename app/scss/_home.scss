@@ -139,7 +139,7 @@ span.date.multi_year:after {
     span.color-0#{$i} {
         background-color: $current-color;
     }
-    article.color-0#{$i} {
+    .color-0#{$i} {
       background-color: $current-color;
     }
 }
@@ -174,18 +174,3 @@ span.date.multi_year:after {
     height: calc(100% - 3rem);
   }
 }
-
-// @media all and (max-width: 991px) {
-//   a.thumbnail {
-//   }
-// }
-//
-// @media all and (max-width: 767px) {
-//   a.thumbnail {
-//   }
-// }
-//
-// @media only screen and (min-width: 557px) and (max-width: 767px) {
-//   .col-xs-12 {
-//   }
-// }

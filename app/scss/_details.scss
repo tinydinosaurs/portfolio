@@ -6,7 +6,7 @@
 	bottom: 0;
 	right: 0;
   // padding: 3rem 5%;
-  background-color: white;
+  // background-color: white;
   height: 100%;
   z-index: 100;
 	opacity: 0;
@@ -29,17 +29,19 @@ section.overlay {
   h1 {
     margin-bottom: 2rem;
     line-height: 3rem;
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   p {
     text-align: left;
-    font-size: 1.125rem;
+    font-size: 1rem;
+    line-height: 1.66;
     font-weight: 300;
   }
   article {
-    // height: 100%;
     padding: 4rem 2rem;
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
+    // height: auto;
+    // overflow: hidden;
   }
 }
 
@@ -73,7 +75,8 @@ article.color-03, article.color-04 {
 }
 
 .overlay aside {
-  margin: 0 3rem 2rem 3rem;
+  padding: 3rem;
+  background-color: white;
 }
 
 a.hide-btn{
@@ -109,14 +112,14 @@ figcaption {
   section.overlay {
     h1 {
       margin-bottom: 3rem;
+      font-size: 2rem;
     }
     p {
       font-size: 1.25rem;
     }
     article {
-      height: 100vh;
+      height: 99.99vh;
       padding: 6rem 4rem;
-      margin-bottom: 4rem;
     }
   }
 
@@ -146,6 +149,6 @@ figcaption {
   }
 
   .overlay aside {
-    margin: 0 4rem;
+    padding: 4rem;
   }
 }
