@@ -38,7 +38,7 @@ section.overlay {
     font-weight: 300;
   }
   article {
-    padding: 4rem 2rem;
+    padding: 3rem;
     // margin-bottom: 2rem;
     // height: auto;
     // overflow: hidden;
@@ -66,8 +66,8 @@ article.color-03, article.color-04 {
 .color-06 ul {
   text-align: left;
   list-style-type: circle;
-  margin: 1.5rem 4rem 0 4rem;
-  font-size: 1rem;
+  margin: 1.5rem 2rem 0 2rem;
+  font-size: 0.9rem;
 }
 
 .color-06 ul li {
@@ -110,45 +110,84 @@ figcaption {
 
 @media screen and (min-width: 768px) {
   section.overlay {
-    h1 {
-      margin-bottom: 3rem;
-      font-size: 2rem;
-    }
     p {
       font-size: 1.25rem;
     }
-    article {
-      height: 99.99vh;
-      padding: 6rem 4rem;
-    }
   }
-
-  section:last-of-type {
-    article {
-      height: auto;
-    }
+  article {
+    height: auto;
   }
-
-  .project-links {
-    margin-top: 3rem;
+  article > .content {
+    padding: 3rem;
   }
-
-  .col-sm-8, .col-sm-4 {
-    padding: 0 2rem;
+  .color-06 ul {
+    margin: 1.5rem 3rem 0 3rem;
+    font-size: 1rem;
   }
 }
 
-@media screen and (min-width: 992px) {
+// @media screen and (min-width: 1000px) {
+//   section.overlay {
+//     h1 {
+//       margin-bottom: 3rem;
+//       font-size: 2rem;
+//     }
+//
+//     article {
+//       // position: relative;
+//       height: 99.99vh;
+//       padding: 6rem 0;
+//     }
+//   }
+
+//   article > .content {
+//     // position: absolute;
+//     // top: 50%;
+//     // transform: translateY(-50%);
+//     padding: 0 6rem;
+//     margin: 0 auto;
+//   }
+//   // section:last-of-type {
+//   //   article {
+//   //     height: auto;
+//   //   }
+//   // }
+//
+//   .project-links {
+//     margin-top: 3rem;
+//   }
+//
+//   .col-sm-8, .col-sm-4 {
+//     padding: 0 2rem;
+//   }
+// }
+
+@media screen and (min-width: 1025px) {
   section.overlay {
     h1 {
       font-size: 2.5rem;
     }
     article {
-      padding: 6rem 8rem;
+      position: relative;
+      padding: 0;
+      height: 99.99vh;
     }
+  }
+
+  article > .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 6rem;
+    margin: 0 auto;
   }
 
   .overlay aside {
     padding: 4rem;
+  }
+
+  .color-06 ul {
+    margin: 1.5rem 4rem 0 4rem;
+    font-size: 1.125rem;
   }
 }
