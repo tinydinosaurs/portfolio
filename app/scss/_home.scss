@@ -7,7 +7,7 @@ header {
 
 header h1 {
   font-family: $sans;
-  font-size: 1.25rem;
+  font-size: 1.33rem;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.125rem;
@@ -33,7 +33,7 @@ header h1 {
 }
 
 .fa-codepen:hover {
-  color: $light_grey;
+  color: $purple;
 }
 
 .fa-linkedin:hover {
@@ -44,7 +44,7 @@ header h1 {
   color: #00b6f1;
 }
 
-.fa-info-circle:hover {
+.fa-file-text-o:hover {
   color: $green;
 }
 // bootstrap grid styles styles
